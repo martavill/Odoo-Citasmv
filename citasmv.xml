@@ -1,0 +1,55 @@
+<odoo>
+  <data>
+    
+    <!-- Creaciòn de vista en forma de arbol -->
+
+    <record model="ir.ui.view" id="citasmv.list">
+      <field name="name">Gestor de Citas TECNODIGITAL</field>
+      <field name="model">citasmv.citasmv</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="fecha"/>
+          <field name="description"/>
+          <field name="orden"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Creaciòn del formulario -->
+    
+     <!-- <record model="ir.actions.act_window" id="citasmv.action_window">
+      <field name="name">citasmv window</field>
+      <field name="res_model">citasmv.citasmv</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.server" id="citasmv.action_server">
+      <field name="name">citasmv server</field>
+      <field name="model_id" ref="model_citasmv_citasmv"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+   
+    <!-- Menu -->
+    
+    <menuitem name="citasmv" id="citasmv.menu_root"/>
+    
+    <!-- Subcategoria del menu -->
+    
+    <menuitem name="Citas" id="citasmv.menu_1" parent="citasmv.menu_root"/>
+    
+    
+
+    <!-- Creaciòn de acciones -->
+    
+    <menuitem name="Listado de Citas" id="citasmv.menu_1_list" parent="citasmv.menu_1"
+              action="citasmv.action_window"/>
+  </data>
+</odoo>
