@@ -2,7 +2,7 @@
 
 An Odoo package to manage appointments created as an assignment for the Multimedia App Development course. 
 
-Modulo de Gestion de Citas para Odoo creado para la Tarea04 de SGE del Ciclo Superior de Desarrollo en Aplicaciones Multimedia. 
+Modulo de Gestión de Citas para Odoo creado para la Tarea04 de SGE del Ciclo Superior de Desarrollo en Aplicaciones Multimedia. 
 
 
 ## How was built 🛠️
